@@ -80,7 +80,7 @@ func main() {
 		log.Fatal("PORT environment variable is not set")
 	}
 
-	awsConfig, err := config.LoadDefaultConfig(context.TODO(), config.WithSharedConfigProfile("test-profile"))
+	awsConfig, err := config.LoadDefaultConfig(context.TODO(), config.WithSharedConfigProfile(""))
 	if err != nil {
 		log.Fatal("cannot load AWS config")
 	}
